@@ -6,6 +6,12 @@ public class Circulo implements FiguraGeometrica2d {
         this.raio = raio;
     }
 
+
+    public int compareTo(FiguraGeometrica2d figura2)
+    {
+        return Double.compare(this.getArea(), figura2.getArea());
+    }
+
     @Override
     public String getTipoFigura() {
 

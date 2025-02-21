@@ -6,6 +6,11 @@ public class Quadrado implements FiguraGeometrica2d {
         this.lado = lado;
     }
 
+    public int compareTo(FiguraGeometrica2d figura2)
+    {
+        return Double.compare(this.getArea(), figura2.getArea());
+    }
+
 
     @Override
     public String getTipoFigura() {
